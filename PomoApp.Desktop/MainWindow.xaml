@@ -4,21 +4,54 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="PomoApp" Height="320" Width="400"
-        ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        Title="PomoBin 🍅" Height="350" Width="550"
+        ResizeMode="CanResizeWithGrip" WindowStartupLocation="CenterScreen"
+        Background="#AF4949">
+
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Foreground"       Value="White"/>
+            <Setter Property="FontWeight"       Value="SemiBold"/>
+            <Setter Property="Cursor"           Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="Border"
+                                Background="#8A3535"
+                                BorderBrush="#6B2525"
+                                BorderThickness="1"
+                                CornerRadius="4">
+                            <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="Border" Property="Background" Value="#9C3D3D"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="Border" Property="Background" Value="#6B2525"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
     <StackPanel Margin="30" VerticalAlignment="Center">
 
         <TextBlock x:Name="PhaseLabel"
-                   Text="Work"
+                   Text="Work PomoBin"
                    FontSize="18" FontWeight="SemiBold"
                    HorizontalAlignment="Center"
-                   Foreground="Crimson"
+                   Foreground="White"
                    Margin="0,0,0,6"/>
 
         <TextBlock x:Name="TimerDisplay"
                    Text="25:00"
                    FontSize="64" FontWeight="Bold"
                    HorizontalAlignment="Center"
+                   Foreground="White"
                    Margin="0,0,0,24"/>
 
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
@@ -36,7 +69,7 @@
         <TextBlock x:Name="SessionLabel"
                    Text="Sessions completed: 0"
                    HorizontalAlignment="Center"
-                   Foreground="Gray"
+                   Foreground="#FADBD8"
                    Margin="0,20,0,0"/>
 
     </StackPanel>

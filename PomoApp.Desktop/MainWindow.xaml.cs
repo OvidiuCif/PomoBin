@@ -31,7 +31,7 @@ public partial class MainWindow : Window
                 PomodoroPhase.LongBreak => "Long Break",
                 _                       => "Work"
             };
-            PhaseLabel.Foreground    = phase == PomodoroPhase.Work ? Brushes.Crimson : Brushes.SteelBlue;
+            PhaseLabel.Foreground    = phase == PomodoroPhase.Work ? Brushes.White : Brushes.LightBlue;
             StartPauseButton.Content = "Start";
         });
     }
@@ -59,7 +59,7 @@ public partial class MainWindow : Window
         _timer.Reset();
         StartPauseButton.Content = "Start";
         PhaseLabel.Text           = "Work";
-        PhaseLabel.Foreground     = Brushes.Crimson;
+        PhaseLabel.Foreground     = Brushes.White;
         SessionLabel.Text         = "Sessions completed: 0";
     }
 
