@@ -72,8 +72,11 @@ public class PomodoroTimerService
         if (!ct.IsCancellationRequested && Remaining <= TimeSpan.Zero)
         {
             IsRunning = false;
-            _completedSessions++;
-            SessionCompleted?.Invoke();
+            if (CurrentPhase == PomodoroPhase.Work)
+            {
+                _completedSessions++;
+                SessionCompleted?.Invoke();
+            }
             AdvancePhase();
         }
     }
