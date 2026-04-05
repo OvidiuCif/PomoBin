@@ -1,0 +1,46 @@
+@PomoApp.Api_HostAddress = http://localhost:5194
+
+### Get timer status
+GET {{PomoApp.Api_HostAddress}}/timer/status
+Accept: application/json
+
+###
+
+### Start timer
+POST {{PomoApp.Api_HostAddress}}/timer/start
+
+###
+
+### Pause timer
+POST {{PomoApp.Api_HostAddress}}/timer/pause
+
+###
+
+### Reset timer
+POST {{PomoApp.Api_HostAddress}}/timer/reset
+
+###
+
+### Skip to next phase
+POST {{PomoApp.Api_HostAddress}}/timer/skip
+
+###
+
+### Get settings
+GET {{PomoApp.Api_HostAddress}}/settings
+Accept: application/json
+
+###
+
+### Update settings
+PUT {{PomoApp.Api_HostAddress}}/settings
+Content-Type: application/json
+
+{
+  "workMinutes": 25,
+  "breakMinutes": 5,
+  "longBreakMinutes": 15,
+  "sessionsBeforeLongBreak": 4
+}
+
+###

@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="PomoApp.Api/PomoApp.Api.csproj" />
+  <Project Path="PomoApp.Core/PomoApp.Core.csproj" />
+  <Project Path="PomoApp.Desktop/PomoApp.Desktop.csproj" />
+</Solution>

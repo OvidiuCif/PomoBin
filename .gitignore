@@ -1,0 +1,86 @@
+# ─── Build output ────────────────────────────────────────────────────────────
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+[Ll]og/
+[Ll]ogs/
+
+# ─── Visual Studio ───────────────────────────────────────────────────────────
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.slnx.user
+*.VC.db
+*.VC.opendb
+*.pidb
+*.svclog
+*.scc
+_ReSharper*/
+*.DotSettings.user
+
+# ─── NuGet ───────────────────────────────────────────────────────────────────
+*.nupkg
+*.snupkg
+project.lock.json
+project.fragment.lock.json
+artifacts/
+packages/
+!**/[Pp]ackages/build/
+
+# ─── .NET / MSBuild ──────────────────────────────────────────────────────────
+*.cache
+*.dbmdl
+*.dbproj.schemaview
+*.jfm
+*.pfx
+*.publishsettings
+orleans.codegen.cs
+PublishProfiles/
+**/[Pp]ublish/
+
+# ─── ASP.NET Core ────────────────────────────────────────────────────────────
+**/wwwroot/dist/
+bundleconfig.json.bak
+
+# ─── WPF / Windows ───────────────────────────────────────────────────────────
+*.manifest
+*.application
+*.appx
+*.msix
+
+# ─── Test results ────────────────────────────────────────────────────────────
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+*.trx
+*.coverage
+*.coveragexml
+coverage*/
+TestResults/
+
+# ─── Rider ───────────────────────────────────────────────────────────────────
+.idea/
+*.sln.iml
+
+# ─── VS Code ─────────────────────────────────────────────────────────────────
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# ─── OS ──────────────────────────────────────────────────────────────────────
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ─── Environment / secrets ───────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+appsettings.*.json
+!appsettings.json
+!appsettings.Development.json
