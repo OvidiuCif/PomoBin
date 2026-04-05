@@ -90,3 +90,7 @@ OpenAPI schema available at `/openapi/v1.json` when running in `Development`.
 | API | ASP.NET Core 10 minimal APIs |
 | Solution format | `.slnx` (Visual Studio 2026) |
 | OpenAPI | `Microsoft.AspNetCore.OpenApi` 10.x |
+
+## License
+
+This project is licensed under the Apache License 2.0. See the [LICENSE](LICENSE) file for details.
